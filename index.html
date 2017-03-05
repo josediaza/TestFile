@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--lang describe html document is going to be using english for it's language-->
+<html lang="en">
+<head>
+<!--describe meta data(allows the website display any character)-->
+<meta charset="UTF-8">
+  <meta name="JoseDWeb" content="create a simple website about me">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Jose Diaz">
+<!--viewport(browser will render the width of the page at the width of its own screen)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--main style(link resquesting the external resources for the website(CSS file this case))-->
+<link rel="stylesheet" type="text/css" href=css/styles.css>
+<!--Javascript source reference of the website-->
+<script type="text/javascript" language="javascript" src="js/script.js"></script>
+<!--Web site title(shows at the top of the browser)-->
+<title>Jose Diaz</title>
+</head> 
+
+<body>
+<!--Navigation bar of the website-->
+<ul class="bar">
+<!--List of the Navigation bar-->
+<li><a href="#contact">Contact</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#home">Home</a></li>
+</ul>
+<header id="home">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<img src="images/josediaz.jpg" alt="Jose Diaz" class="picture" style="float: right">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<center>
+<h1>JOSE DIAZ</h1>
+<h4>JUNIOR SOFTWARE DEVELOPER</h4>
+<!--links to my linkedin, github and email using javascript-->
+<a href="https://github.com/josediaza/" target="_blank">
+<img src="images/1github.png" alt="Github" class="icon"></a>
+<a href="https://www.linkedin.com/in/jose-diaz-arrechea/" target="_blank">
+<img src="images/1488680678_0995-linkedin-logo-square2.png" alt="Linkedin" class="icon"></a>
+<a onclick="myFunction()" target="_blank"> <img src="images/1488697799_gmail.png" alt="my email" class="icon"></a>
+</center>
+<p>&nbsp;&nbsp;&nbsp;</p>
+
+
+</header>
+<!--Section with the parallax scrolling background-->
+<div class="parallax"></div>
+
+
+<!--About me-->
+<div id="about" class="aboutme">
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<div class="second">
+<h2>About me</h2>
+</div>
+<!--Quotes-->
+<p class="headline">"The difference between the impossible and the possible lies in a man's determination."</p>
+<br>
+<!--Who I am paragraphs-->
+<p>I’m a NPower Canada Program participant with the ability to gather people to work together resolving problems as a team. I dedicate every single day on learn quality skills that show the best of myself, in order to make a significant impact on building my career. I enjoy applying my knowledge and skills to projects using creative and innovative thinking.</p>
+<p>I’m a confident, positive thinker with a great attitude. I love Information Technology and I am very interesting to pursue a career in this field. Working on software technology is my most favorite passion and I am very motivated to learn as much as I can about technology. My goal is to make an active contribution to any business I join in the field, and to build a career I can be proud of. My mission is to always strive to develop and expand my professional skillset to the highest level. </p>
+<!--download attribute to download resume-->
+<p><a href="resume/JoseDiaz.pdf" title="download resume" download>Download my resume</a></p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+</div>
+
+<div class="parallax"></div>
+<!--About me end-->
+
+
+<!--Portfolio section-->
+<div id="portfolio">
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<section class="myprojects">
+<h2>Portfolio</h2>
+</section>
+<div class="app">
+<!--Console Application-->
+<a href="https://github.com/josediaza/TestFile/blob/master/Program.cs"><p style="float: left">Loopy Planets-Console Application</p></a>
+</a>
+<!--window Application-->
+<a href="https://github.com/josediaza/TestFile/blob/master/Form1.cs"><p style="float: right">Loopy Planets-Window Form Application</p></a>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+</div>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+</div>
+
+<!--Portfolio end-->
+
+
+<!--Section with the parallax scrolling background-->
+<div class="parallax"></div>
+
+<!--Contact me section-->
+<div id="contact">
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+
+<h2 class="contactinfo">Contact me</h2>
+<!--Form to submit the user information-->
+<div class="container">
+<!--Javascript function to submit-->
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+<!--Labels for the information-->
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="fname" required placeholder="Your full name...">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required placeholder="Your email address...">
+
+    <label for="subject">Comments</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+   <!--button with the submit input-->
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+</div>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<!--footer section-->
+<footer role="contentinfo">
+&copyCopyrights 2017 Jose Diaz
+</footer>
+</body>
+</html>
